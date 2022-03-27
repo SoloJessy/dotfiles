@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+/* gets rid of the shitty bar at the top */
+#pluginNotice {
+    display: none;
+}
+
+/* 
+Shrinks the channel sidebar 
+This is the div that contains the whole chat room stuff, top to bottem
+*/
+.sidebar-1tnWFu {
+    width: 150px;
+}
+
+/* 
+shrinks the channel name font size 
+This class can be gotten by directly selecting a channel name from the sidebar
+*/
+.channelName-3KPsGw {
+    font-size: 12px;
+}
+
+/* 
+shirnks the channel icon size 
+Click the channel icons directly
+*/
+.icon-2W8DHg {
+    width: 12px;
+    height: 12px;
+}
+
+/* 
+Fits the avatar icon into the correct location 
+panels class can be gotten from the user area aria-label
+avatarWrapper can be gotten from inside of that.
+*/
+.panels-3wFtMD .avatarWrapper-1B9FTW[aria-expanded="false"] {
+    left: 238px !important;
+    bottom: 25px !important;
+}
+
+/* 
+Applies custom font to all chat content 
+Select a message, then scroll up to find the css that covers the whole chat body
+*/
+.chatContent-3KubbW {
+    /* font-family: monospace; */
+    font-family: 'DroidSansMono Nerd Font', monospace;
+    /* font-family: 'Fira Code', monospace; */
+}
+
+/* 
+Ensures timestamps are on one line and removes annoying margin 
+Inside the h2 header, you can find the latin24compact thingy, it is the last class in that span. 
+*/
+.timestamp-p1Df1m {
+    min-width: 48px;
+    margin: 0 !important;
+}
+
+/* 
+removes margin from chat names 
+message can be found as a class in the huge dive inside the overall chat-message
+headerText can be found can be found in the span surrounding the username's span
+*/
+.message-2CShn3 .headerText-2z4IhQ {
+    margin: 0;
+}
+
+/* 
+Applies a useful seperator to make reading the messages easier for me 
+message/header classes can be obtained from the above class
+replied mesasge stuff can be gotten simply from looking at a replied message html
+*/
+.message-2CShn3 .headerText-2z4IhQ:after,
+.repliedMessage-3Z6XBG .repliedTextPreview-1bvxun:before {
+    content: "| ";
+    color: #ff00ff;
+}
+
+/* 
+changes the size of the channel section names 
+These are really straight forward, just select the section name and find them
+*/
+.sidebar-1tnWFu .containerDefault-3TQ5YN .name-3BUDLf {
+    font-size: 14px;
+}
+
+
+/* 
+removes large padding from channel section names 
+gotten from above
+*/
+.containerDefault-3TQ5YN {
+    padding-top: 3px;
+}
+
+/*
+Re: shows the arrow for the channel sections 
+simple to find, click the section name, then look for the arrow svg
+*/
+.arrow-2HswgU {
+    display: block !important;
+}
+
+/* 
+shrink the members list 
+collected from the aside / div after selecting the sidebar
+*/
+.membersWrap-3NUR2t,
+.members-3WRCEx {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+/* 
+removes broken online/away/busy icon 
+get the svg element in the avatar
+find the rect that is the status icon, then get its class
+*/
+.svg-2azL_l svg,
+.pointerEvents-9SZWKj {
+    display: none;
+}
+
+/* 
+Fixes something in the message entry box 
+select the message entry box and it can be found near the top of the form
+*/
+.channelTextArea-1FufC0 .scrollableContainer-15eg7h:after {
+    top: initial;
+    bottom: 0;
+}
+
+/* Allows code box's to fit full width */
+.messageContent-2t3eCI pre {
+    max-width: none;
+    width: auto;
+}
+
+/* centers the buttons to make them easier on the eyes */
+button[aria-label="Mute"],
+button[aria-label="Deafen"],
+button[aria-label="User Settings"] {
+    width: auto;
+}
+
+/* Remove excess gaps between channels and allow space for message notifications */
+.mainContent-20q_Hp {
+    padding: 0;
+    padding-left: 8px;
+}
+
+/* Removes the excess padding on the create invite button */
+.iconBase-2G48Fc {
+    padding: 0;
+}
+
+/* Removes useless margin on emote buttons */
+.webkit-QgSAqd .buttons-uaqb-5 {
+    margin-right: 0;
+}
+
+/* Makes it easier to read text in code blocks. */
+.hljs {
+    color: #bdbdbd;
+    border: 2px solid rebeccapurple !important;
+    background-color: #241E33 !important;
+    font-family: 'DroidSansMono Nerd Font';
+}
