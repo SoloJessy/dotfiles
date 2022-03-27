@@ -1,0 +1,77 @@
+set nocompatible
+
+call plug#begin('~/.vim/plugged')
+
+source ~/.vim/plug/fugitive.vim
+source ~/.vim/plug/airline.vim
+source ~/.vim/plug/syntastic.vim
+source ~/.vim/plug/rust-lang.vim
+source ~/.vim/plug/ale.vim
+source ~/.vim/plug/clippy.vim
+source ~/.vim/plug/fzf.vim
+source ~/.vim/plug/sonokai.vim
+
+call plug#end()
+
+"--------------------------------------------------
+"                   General
+"--------------------------------------------------
+"
+set number
+set relativenumber
+
+set laststatus=2
+
+set encoding=utf-8
+
+set tabstop=4
+set expandtab
+set shiftwidth=4
+
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+syntax enable
+set termguicolors
+let &t_ut=''
+colorscheme sonokai
+
+set cursorline
+highlight clear CursorLine
+highlight CursorLineNR cterm=none gui=none guifg=#FFD866 guibg=background | redraw
+
+highlight ColorColumn guibg=magenta | redraw
+call matchadd('ColorColumn', '\%81v', 100)
+
+filetype plugin indent on
+
+set nowrap
+set incsearch
+set ignorecase
+set smartcase
+
+set listchars=tab:>~,nbsp:_,trail:.
+set list
+
+set hidden
+
+"-------------------------------------------------
+"                 Keybindings
+"-------------------------------------------------
+
+noremap <up>    <Nop>
+noremap <down>  <Nop>
+noremap <left>  <Nop>
+noremap <right> <Nop>
+
+map oo o<esc>
+map OO O<esc>
+
+nnoremap <C-o> :Files<CR>
+
+"-------------------------------------------------
+"                   Plugins
+"--------------------------------------------------
+
+

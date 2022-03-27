@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/jessy/projects/rust/rrl-manager/src'
+let g:netrw_dirhist_3='/home/jessy/projects/rust/rrl-manager'
+let g:netrw_dirhist_2='/home/jessy/projects/rust/rrl-manager/src'
+let g:netrw_dirhist_1='/home/jessy/projects/rust/rrl-manager'
+let g:netrw_dirhist_0='/home/jessy/dotfiles'
+let g:netrw_dirhist_9='/home/jessy/projects/rust/rrl-manager/src'
+let g:netrw_dirhist_8='/home/jessy/projects/rust/rrl-manager'
+let g:netrw_dirhist_7='/home/jessy/projects/rust/rrl-manager/src'
+let g:netrw_dirhist_6='/home/jessy/projects/rust/rrl-manager'
+let g:netrw_dirhist_5='/home/jessy/projects/rust/rrl-manager/src'
